@@ -1,0 +1,17 @@
+This directory comprises ASP files implementing faulty ISCAS85 circuits together with observations. Each file is named using the following convention:
+
+<ISCAS name>_tc_<X>_<Y>.pl
+
+with
+
+<X> can be 1, 2, or 3 indicating whether there is a single, double, or triple fault in the circuit.
+
+<Y> is a number from 1 to 100 for each type of fault (single, ...)
+
+For each ISCAS85 circuit we have 10 different observations. Note, that the faults have been generated so that in case of double or triple faults there is no single or double fault respectively for most of the examples. It is further worth noting that the ASP files at the moment are configured to search for single faults only. You have to change 
+
+:- not no_ab(1).
+
+accordingly. 
+
+In addition, we have shell that can be used to call the ASP solver clingo for all files (but does only search for a fixed size of faults). 
