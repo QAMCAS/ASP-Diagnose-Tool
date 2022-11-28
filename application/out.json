@@ -1,0 +1,170 @@
+[
+      {
+            "0": {
+                  "../data/two_lamps_example_orig.pl": [
+                        {
+                              "model status": "model satisfied",
+                              "diag time": 0.003350973129272461,
+                              "fault size": 0,
+                              "diag found": 1,
+                              "diag": [
+                                    []
+                              ],
+                              "observation": [
+                                    "val(light(l1),off).",
+                                    "val(light(l2),off).",
+                                    "off(s)."
+                              ]
+                        }
+                  ]
+            }
+      },
+      {
+            "1": {
+                  "../data/two_lamps_example_orig.pl": [
+                        {
+                              "model status": "model satisfied",
+                              "diag time": 0.002845287322998047,
+                              "fault size": 0,
+                              "diag found": 1,
+                              "diag": [
+                                    []
+                              ],
+                              "observation": [
+                                    "val(light(l1),on).",
+                                    "val(light(l2),on).",
+                                    "on(s)."
+                              ]
+                        }
+                  ]
+            }
+      },
+      {
+            "2": {
+                  "../data/two_lamps_example_orig.pl": [
+                        {
+                              "model status": "model satisfied",
+                              "diag time": 0.002596139907836914,
+                              "fault size": 1,
+                              "diag found": 1,
+                              "diag": [
+                                    [
+                                          "ab(l1)"
+                                    ]
+                              ],
+                              "observation": [
+                                    "val(light(l1),off).",
+                                    "val(light(l2),on).",
+                                    "on(s)."
+                              ]
+                        }
+                  ]
+            }
+      },
+      {
+            "3": {
+                  "../data/two_lamps_example_orig.pl": [
+                        {
+                              "model status": "model satisfied",
+                              "diag time": 0.0026328563690185547,
+                              "fault size": 1,
+                              "diag found": 1,
+                              "diag": [
+                                    [
+                                          "ab(l2)"
+                                    ]
+                              ],
+                              "observation": [
+                                    "val(light(l1),on).",
+                                    "val(light(l2),off).",
+                                    "on(s)."
+                              ]
+                        }
+                  ]
+            }
+      },
+      {
+            "4": {
+                  "../data/two_lamps_example_orig.pl": [
+                        {
+                              "model status": "model satisfied",
+                              "diag time": 0.0025720596313476562,
+                              "fault size": 1,
+                              "diag found": 1,
+                              "diag": [
+                                    [
+                                          "ab(s)"
+                                    ]
+                              ],
+                              "observation": [
+                                    "val(light(l1),on).",
+                                    "val(light(l2),on).",
+                                    "off(s)."
+                              ]
+                        }
+                  ]
+            }
+      },
+      {
+            "5": {
+                  "../data/two_lamps_example_orig.pl": [
+                        {
+                              "model status": "model satisfied",
+                              "diag time": 0.0028030872344970703,
+                              "fault size": 0,
+                              "diag found": 1,
+                              "diag": [
+                                    []
+                              ],
+                              "observation": [
+                                    "val(light(l1),on).",
+                                    "val(light(l2),on).",
+                                    "on(s)."
+                              ]
+                        }
+                  ]
+            }
+      },
+      {
+            "6": {
+                  "../data/two_lamps_example_orig.pl": [
+                        {
+                              "model status": "model satisfied",
+                              "diag time": 0.0027039051055908203,
+                              "fault size": 1,
+                              "diag found": 2,
+                              "diag": [
+                                    [
+                                          "ab(s)"
+                                    ],
+                                    [
+                                          "ab(b)"
+                                    ]
+                              ],
+                              "observation": [
+                                    "val(light(l1),off).",
+                                    "val(light(l2),off).",
+                                    "on(s)."
+                              ]
+                        },
+                        {
+                              "model status": "model satisfied",
+                              "diag time": 0.0023217201232910156,
+                              "fault size": 2,
+                              "diag found": 1,
+                              "diag": [
+                                    [
+                                          "ab(l1)",
+                                          "ab(l2)"
+                                    ]
+                              ],
+                              "observation": [
+                                    "val(light(l1),off).",
+                                    "val(light(l2),off).",
+                                    "on(s)."
+                              ]
+                        }
+                  ]
+            }
+      }
+]
