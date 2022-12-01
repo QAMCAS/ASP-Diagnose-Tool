@@ -1,6 +1,6 @@
-# Asp Clingo Python Tool
+# Asp Diagnose Tool
 
-Model Diagnose Clingo Tool
+ASP model diagnose tool based on the theorem solver CLINGO 5.4.1. 
 
 "diagnose" is an executable file which includes all necessary libraries as CLINGO 5.4.1. This file is only executable on MAC OS.
 "diagnose_win.exe" is the executable file for windows systems including all libraries to run CLINGO 5.4.1.
