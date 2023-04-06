@@ -27,7 +27,7 @@ conda activate diagnose
 If a python import of the tool is necessary, one can use the diagnose.py class to import into the related python script. The argument "settings" dictionalry for this class can be seen in main_diagnose.py (see optional arugments)
 
 ## Optional arguments:
-
+```
 | Argument | Argument | Description |
 | ------ | ------ | ------ |
 | --help | -h | show this help message and exit |
@@ -43,16 +43,18 @@ If a python import of the tool is necessary, one can use the diagnose.py class t
 | --observation | -obs | add additional observation file to ground with ASP file (e.g.: example.pl) |
 | --adapt | -adapt | adapt data (comment out all constraints ':- not no_ab(X)' |
 | --strongfaults | -strongfaults | use argument to activate search for strong fault 'only' or 'without' constraints, if argument is not used strong faults constraints are not implemented. choices=["only", "without"] |
-
+```
 ## Example using application diagnose in terminal (all dependencies inlcuded!):
-
+```
 application/diagnose --index "0" --path data/asp_test_data --faultsize 3 --answersets 0 --output application/filename --json --csv --hidediagoutput --strongfaults "only"
-
+```
 ## Example usnig python code:
-
+```
 python app/main_diagnose.py --index "*" --path data/asp_test_data --faultsize 3 --answersets 0 --output application/filename --json --csv --strongfaults "without"
+```
+```
 python app/main_diagnose.py --index "1" --file testfile.pl --faultsize 3 --answersets 0 --output application/filename --json --csv
-
+```
 ## Output:
 
 After the computation is finished, the data can be stored in a CSV (--csv) and JSON (--json) file based on the given output (--output) filename and path.
