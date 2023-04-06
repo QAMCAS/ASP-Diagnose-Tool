@@ -125,12 +125,13 @@ class Diagnose:
 
             analysisData.append(self.__collectData(index, file, diagnoseTime, diagnoseNumber, self.computationTime))
             
+            if self.settings["showDiagInTerminal"]:
+                self.__print_to_terminal(diagnoseDict)
+                
         if self.settings["isWrite2Csv"]:
             self.__writeData2Csv(self.settings["outputFile"], analysisData)
         if self.settings["isWrite2Json"]:
             self.__writeData2Json(self.settings["outputFile"], diagnoseDict)
-        if self.settings["showDiagInTerminal"]:
-            self.__print_to_terminal(diagnoseDict)
 
     # handle clingo solve answer sets
     def __on_model(self, m):

@@ -46,12 +46,12 @@ If a python import of the tool is necessary, one can use the diagnose.py class t
 
 ## Example using application diagnose in terminal (all dependencies inlcuded!):
 
-application/diagnose --index "0" --path data/asp_test_data --faultsize 3 --answersets 0 --output filename --json --csv --hidediagoutput --strongfaults "only"
+application/diagnose --index "0" --path data/asp_test_data --faultsize 3 --answersets 0 --output application/filename --json --csv --hidediagoutput --strongfaults "only"
 
 ## Example usnig python code:
 
-python model_diagnose.py --index "*" --path data/asp_test_data --faultsize 3 --answersets 0 --output filename --json --csv --strongfaults "without"
-python model_diagnose.py --index "1" --file testfile.pl --faultsize 3 --answersets 0 --output filename --json --csv
+python app/main_diagnose.py --index "*" --path data/asp_test_data --faultsize 3 --answersets 0 --output application/filename --json --csv --strongfaults "without"
+python app/main_diagnose.py --index "1" --file testfile.pl --faultsize 3 --answersets 0 --output application/filename --json --csv
 
 ## Output:
 
@@ -166,6 +166,5 @@ E.g.:
 Use the conda environment to build the executable file for the related OS with the following command. 
 
 ```
-cd app
-pyinstaller --onefile main_diagnose.py --name diagnose
+pyinstaller --onefile app/main_diagnose.py --name diagnose --distpath application/ --specpath application/ --hidden-import cffi 
 ```

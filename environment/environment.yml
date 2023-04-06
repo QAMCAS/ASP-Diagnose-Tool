@@ -4,6 +4,6 @@ channels:
   - anaconda
   - potassco
 dependencies:
-  - python=3.6
-  - clingo=5.4
-  - pyinstaller=3.3
+  - python=3.10
+  - clingo
+  - pyinstaller
